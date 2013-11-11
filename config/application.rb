@@ -8,6 +8,7 @@ Bundler.require(:default, Rails.env)
 
 module Slambook
   class Application < Rails::Application
+    config.filter_parameters << :password
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -19,12 +20,5 @@ module Slambook
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    config.generators do |g|
-      g.template_engine :haml
-
-        # you can also specify a different test framework or ORM here
-	#   # g.test_framework  :rspec
-	#     # g.orm             :mongoid
-    end    
   end
 end

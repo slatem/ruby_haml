@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 1.2'
 gem "haml", '4.0.3'
 gem 'haml-rails', :group => :development
 
+gem 'bcrypt-ruby'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

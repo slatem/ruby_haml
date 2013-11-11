@@ -13,7 +13,9 @@ Slambook::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
 
   #root to: "welcome:index"
   # Example resource route with options:

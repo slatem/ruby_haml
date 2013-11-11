@@ -5,5 +5,10 @@
   %strong Text:
   = @post.text
 %br
+%h2 Comments
+= render @post.comments
+%h2 Add a Comment
+= render 'comments/form'
 %a= link_to "View All", posts_path
 %a= link_to "Edit", edit_post_path(@post)
+
