@@ -1,0 +1,9 @@
+%p
+  %strong Title:
+  = @post.title
+%p
+  %strong Text:
+  = @post.text
+%br
+%a= link_to "View All", posts_path
+%a= link_to "Edit", edit_post_path(@post)
